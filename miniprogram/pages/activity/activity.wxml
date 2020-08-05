@@ -1,0 +1,40 @@
+<view class="container">
+	<view class="filter-flex">
+		<view class="filter-tab sort-tab">
+			<text bindtap="setSortBy" data-sortindex="{{index}}" data-sortid="{{item.id}}" class="{{sortindex==index?'active':''}}" wx:for="{{sort}}" wx:key="index">{{item.title}}</text>
+		</view>
+	</view>
+	<!-- time -->
+	<scroll-view class="container-body" scroll-y="true" scroll-top="{{scrolltop}}" bindscroll="scrollHandle" lower-threshold="50" bindscrolltolower="scrollLoading">
+		<view class="conference-list">
+			<navigator class="conference-item" wx:for="{{activitylist}}" wx:key="index" url="../activitydetail/activitydetail?id={{item.id}}">
+				<view class="conference-item-img">
+					<image src="{{item.imgurl}}" mode="aspectFill"></image>
+					<text class="hover{{index}}" data-status="{{item.status}}">{{item.status}}</text>
+				</view>
+				<view class="conference-item-text">
+					<view class="conference-item-title">{{item.name}}</view>
+					<view class="conference-item-info activity-item-info">
+						<view>
+						<!-- 时间 -->
+							<view class="iconfont icon-shijianlishijilujishizhongbiaoxianxing ">{{item.time}}</view>
+						</view>
+						<view>
+						<!-- 赞 -->
+							<view class="iconfont icon-bang bang">{{item.coments}}</view>
+						</view>
+					</view>
+					<!-- 地点 -->
+					<navigator class="conference-item-info" url="../near/near">
+						<view class="iconfont icon-location1 icondidian">{{item.address}}</view>
+					</navigator>
+				</view>
+			</navigator>
+		</view>
+		<view class="gototop iconfont icon-Up-Normal {{scrolltop>200?'active':''}}" bindtap="goToTop"></view>
+		<!-- <view class="gototop"> -->
+		<go-top />
+		<!-- </view> -->
+
+	</scroll-view>
+</view>

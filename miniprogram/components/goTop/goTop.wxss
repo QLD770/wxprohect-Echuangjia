@@ -1,0 +1,15 @@
+/* components/goTop/goTop.wxss */
+.gototop{
+	width: 70rpx;
+	height: 70rpx;
+	position: fixed;
+	bottom: 20rpx;
+	right: 20rpx;
+	transition: all 0.3s;
+	opacity: 0;
+	transform: translateY(200rpx);
+}
+.gototop.active{
+	opacity: 1;
+	transform: translateY(0);
+}

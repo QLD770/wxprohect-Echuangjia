@@ -1,0 +1,6 @@
+{
+	"navigationBarTitleText": "问题反馈",
+	"usingComponents": {
+    "call-phone" : "/components/callPhone/callPhone"
+  }
+}

@@ -1,0 +1,19 @@
+<view class="container">
+	<view class="my-list">
+		<navigator class="my-item" url="../myconferencelist/myconferencelist">
+			<text class="iconfont icon-benzi">入驻申请</text>
+		</navigator>
+		<navigator class="my-item" url="../myconferencelist/myconferencelist">
+			<text class="iconfont icon-gongju">物业服务</text>
+		</navigator>
+		<navigator class="my-item" url="../myconferencelist/myconferencelist">
+			<text class="iconfont icon-diannao">会议室预订</text>
+		</navigator>
+		<navigator class="my-item" url="../myconferencelist/myconferencelist">
+			<text class="iconfont icon-wenti">问题反馈</text>
+		</navigator>
+		<navigator class="my-item" url="../myconferencelist/myconferencelist">
+			<text class="iconfont icon-yun">云资源申请</text>
+		</navigator>
+	</view>
+</view>

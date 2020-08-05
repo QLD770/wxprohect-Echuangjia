@@ -1,0 +1,1 @@
+		<view class="gototop iconfont icon-Up-Normal {{scrolltop>200?'active':''}}" bindtap="goToTop"></view>

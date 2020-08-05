@@ -1,0 +1,60 @@
+@import '../conference/conference.wxss';
+
+.activity-item-info {
+	justify-content: space-between;
+}
+
+.activity-item-info text {
+	flex: none;
+}
+
+.conference-item-info text:before {
+	content: '';
+	display: inline-block;
+	width: 34rpx;
+	height: 34rpx;
+	vertical-align: -2rpx;
+	margin-right: 6rpx;
+}
+.icondidian{
+	font-size: 25rpx;
+}
+.bang{
+	color:#f00 ;
+}
+/* .icon-time:before {
+	background-repeat: no-repeat;
+	background-attachment: 50% 50%/100%;
+	background-position: auto;
+}
+
+.icon-xinxi:before {
+	background-repeat: no-repeat;
+	background-attachment: 50% 50%/100%;
+	background-position: auto;
+}
+
+.icon-zuobiao:before {
+	background-repeat: no-repeat;
+	background-attachment: 50% 50%/100%;
+	background-position: auto;
+} */
+/* .icondown{
+	position: relative;
+	top:10rpx ;
+	left: 10rpx;
+} */
+.gototop{
+	width: 70rpx;
+	height: 70rpx;
+	position: fixed;
+	bottom: 20rpx;
+	right: 20rpx;
+	transition: all 0.3s;
+	opacity: 0;
+	transform: translateY(200rpx);
+}
+.gototop.active{
+	opacity: 1;
+	transform: translateY(0);
+}
